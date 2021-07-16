@@ -1,0 +1,41 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    display: flex;
+}
+
+div {
+    height: 100%;
+    width: calc(100% / 3);
+}
+
+#yellow {
+    background-color: yellow;
+}
+#black {
+    background-color: black;
+}
+#red {
+    background-color: red;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div {
+        height: 33%;
+        width: 100%;
+    }
+
+    #yellow {
+        order: 1;
+    }
+
+    
+}
